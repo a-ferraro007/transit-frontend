@@ -4,7 +4,7 @@
 
   onMount(() => {
     console.log('WS')
-    conn = new WebSocket('ws://mta.tony.place/ws?stopId=L12&subwayLine=L')
+    conn = new WebSocket('wss://mta.tony.place/ws?stopId=L12&subwayLine=L')
     //wss://mta.tony.place/ws?stopId=L12
     btn = document.getElementById('btn')
 
