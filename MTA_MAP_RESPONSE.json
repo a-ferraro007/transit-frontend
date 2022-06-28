@@ -1,0 +1,127 @@
+[
+  {
+    "stop": {
+      "id": "MTASBWY:L12",
+      "name": "Grand St",
+      "lat": 40.711926,
+      "lon": -73.940672,
+      "parentStation": "L12"
+    },
+    "alerts": [
+      {
+        "alertHeaderText": "Subways operate on a Saturday schedule",
+        "alertDescriptionText": "",
+        "effectiveStartDate": 1656907200000,
+        "createdAtDate": 1655488887000,
+        "effectiveEndDate": 1656993559000,
+        "updatedAtDate": 1655488887000,
+        "displayBeforeActiveMillis": 0,
+        "alertType": "Saturday Schedule",
+        "humanReadableActivePeriod": "Jul 4, Monday, Independence Day",
+        "id": "lmm:planned_work:5062"
+      },
+      {
+        "alertHeaderText": "All [L] trains at 1 Av and 3 Av board from the Brooklyn-bound platform",
+        "alertDescriptionText": "What's happening?\nTrack maintenance",
+        "effectiveStartDate": 1652851800000,
+        "createdAtDate": 1650395441000,
+        "servicePlanNumbers": ["B-21-67"],
+        "effectiveEndDate": 1672394400000,
+        "updatedAtDate": 1652704647000,
+        "displayBeforeActiveMillis": 3600000,
+        "alertType": "Planned - Boarding Change",
+        "humanReadableActivePeriod": "Wed and Fri, 1:30 AM to 5:00 AM until Dec 30",
+        "id": "lmm:planned_work:3920"
+      },
+      {
+        "alertHeaderText": "All [L] trains at 3 Av and 1 Av board from the 8 Av-bound platform",
+        "alertDescriptionText": "What's happening?\nTrack maintenance",
+        "effectiveStartDate": 1652765400000,
+        "createdAtDate": 1650395217000,
+        "servicePlanNumbers": ["B-21-66"],
+        "effectiveEndDate": 1672308000000,
+        "updatedAtDate": 1652960703000,
+        "displayBeforeActiveMillis": 3600000,
+        "alertType": "Planned - Boarding Change",
+        "humanReadableActivePeriod": "Tue and Thu, 1:30 AM to 5:00 AM until Dec 29",
+        "id": "lmm:planned_work:3919"
+      },
+      {
+        "alertHeaderText": "No [L] trains between Broadway Junction and Lorimer St",
+        "alertDescriptionText": "[L] service runs in two sections:\n1. Between Canarsie-Rockaway Pkwy and Broadway Junction every 10 minutes until approximately 12:00 AM\n2. Between Lorimer St and 8 Av every 12 minutes until approximately 1:00 AM\n\nshuttle bus icon Free shuttle buses make stops between Broadway Junction and Lorimer St.\nTransfer between trains and shuttle bus icon buses at Broadway Junction and/or Lorimer St.\nFor service between Brooklyn and Manhattan, consider the [A] or [J].\nTransfer between trains and shuttle bus icon buses at Broadway Junction.\nNote: All trains at Lorimer St board from the Manhattan-bound platform.\n\nWhat's happening?\nTrack maintenance\n\naccessibility icon This service change affects one or more ADA accessible stations and these travel alternatives may not be fully accessible. Please contact 511 to plan your trip.",
+        "effectiveStartDate": 1658197800000,
+        "createdAtDate": 1655905117000,
+        "servicePlanNumbers": ["B-30-56"],
+        "effectiveEndDate": 1658480400000,
+        "updatedAtDate": 1655913486000,
+        "displayBeforeActiveMillis": 3600000,
+        "stationAlternates": [
+          {
+            "notes": "[A][J][L]\nshuttle bus icon Fulton St at Van Sinderen Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L22"
+          },
+          {
+            "notes": "shuttle bus icon Bushwick Av at Aberdeen St (to Lorimer St)\nshuttle bus icon Bushwick Av at DeSales Pl (to Broadway Junction)",
+            "agencyId": "MTASBWY",
+            "stopId": "L21"
+          },
+          {
+            "notes": "shuttle bus icon Decatur St at Wilson Av (to Lorimer St)\nshuttle bus icon Cooper St at Wilson Av (to Broadway Junction)",
+            "agencyId": "MTASBWY",
+            "stopId": "L20"
+          },
+          {
+            "notes": "shuttle bus icon Cypress Av at George St (to Lorimer St)\nshuttle bus icon Wyckoff Av at Weirfield St (to Broadway Junction)",
+            "agencyId": "MTASBWY",
+            "stopId": "L19"
+          },
+          {
+            "notes": "[M]\nshuttle bus icon Gates Av at Wyckoff Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L17"
+          },
+          {
+            "notes": "shuttle bus icon Wyckoff Av at DeKalb Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L16"
+          },
+          {
+            "notes": "shuttle bus icon Wyckoff Av at Starr St",
+            "agencyId": "MTASBWY",
+            "stopId": "L15"
+          },
+          {
+            "notes": "shuttle bus icon Harrison Pl at Morgan Av (to Lorimer St)\nshuttle bus icon Morgan Av at Harrison Pl (to Broadway Junction)",
+            "agencyId": "MTASBWY",
+            "stopId": "L14"
+          },
+          {
+            "notes": "shuttle bus icon Bushwick Av at Montrose Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L13"
+          },
+          {
+            "notes": "shuttle bus icon Bushwick Av at Grand St",
+            "agencyId": "MTASBWY",
+            "stopId": "L12"
+          },
+          {
+            "notes": "shuttle bus icon Metropolitan Av at Graham Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L11"
+          },
+          {
+            "notes": "[L]\nshuttle bus icon Metropolitan Av at Union Av",
+            "agencyId": "MTASBWY",
+            "stopId": "L10"
+          }
+        ],
+        "alertType": "Planned - Part Suspended",
+        "humanReadableActivePeriod": "Jul 18 - 22, Mon to Fri, 10:30 PM to 5:00 AM",
+        "id": "lmm:planned_work:5113"
+      }
+    ],
+    "groups": []
+  }
+]
