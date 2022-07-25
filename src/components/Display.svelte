@@ -5,24 +5,17 @@
   onMount(() => {
     console.log('WS')
     conn = new WebSocket('wss://mta.tony.place/ws?stopId=L12&subwayLine=L')
-    //wss://mta.tony.place/ws?stopId=L12
     btn = document.getElementById('btn')
 
-    //conn.addEventListener("open", (evt) => {
-    //  console.log("open", conn.readyState);
-    //  conn.send(JSON.stringify({"ready": true}))
-    //})
-
-    //conn.addEventListener("message", (evt) => {
-      conn.onmessage = function(evt) {
+    conn.onmessage = function(evt) {
       var messages = evt.data.split('\n')
       let data = JSON.parse(messages)
-      console.log(data);
-      const { manhattan, brooklyn } = parse(data)
-      console.log(manhattan)
-      mTime = manhattan[0]?.train.timeInMinutes != undefined ? manhattan[0]?.train.timeInMinutes + ' min' : 0 + ' min'
-      bkTime = brooklyn[0]?.train.timeInMinutes != undefined ? brooklyn[0]?.train.timeInMinutes + ' min' : 0 + " min"
-    }//)
+      const { northbound, southbound } = data.parsedTrains
+      console.log({ northbound, southbound })
+
+      mTime = northbound[0]?.train.timeInMinutes != undefined ? northbound[0]?.train.timeInMinutes + ' min' : 0 + ' min'
+      bkTime = southbound[0]?.train.timeInMinutes != undefined ? southbound[0]?.train.timeInMinutes + ' min' : 0 + " min"
+    }
 
 
 
@@ -43,31 +36,6 @@
     })
   })
 
-  //conn.send(
-  //  JSON.stringify({
-  //    id: 'IDDD',
-  //    test: 'TEST'
-  //  })
-  //)
-
-function parse(data) {
-  let brooklyn = data.trains
-    .filter((train) => train.direction === 'Brooklyn')
-    .sort((a, b) => a.train.arrivalTimeDelay - b.train.arrivalTimeDelay)
-    .filter((train) => {
-      //const now = Math.floor(new Date().getTime() / 1000)
-      return !(train.train.arrivalTimeDelay <= Date.now() / 1000)
-    })
-  let manhattan = data.trains
-    .filter((train) => train.direction === 'Manhattan')
-    .sort((a, b) => a.train.arrivalTimeDelay - b.train.arrivalTimeDelay)
-    .filter((train) => {
-      //const now = Math.floor(new Date().getTime() / 1000)
-      return !(train.train.arrivalTimeDelay <= Date.now() / 1000)
-    })
-
-  return { manhattan, brooklyn }
-}
 </script>
   <div class='outer-border'>
     <div class='inner-border'>
