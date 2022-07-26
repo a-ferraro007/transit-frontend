@@ -31,7 +31,7 @@
           method: 'POST'
         })
         const data = await res.json()
-        console.log(parse(data))
+        console.log(data)
       } catch (error) {
         console.error(error)
       }
